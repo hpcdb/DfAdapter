@@ -1,3 +1,6 @@
+adaptations.jsonl
+*pyc
 derby.log
 *.rdb
 metastore_db/
+src/*pyc
