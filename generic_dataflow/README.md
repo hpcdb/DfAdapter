@@ -5,9 +5,9 @@
 - Apache Spark
   - [Download](https://spark.apache.org/downloads.html)
   - It was tested on v2.2.0, Pre-built for Apache Hadoop 2.7 and later
-- [Redis]
+- Redis
   - [Download](https://redis.io/topics/quickstart)
-- [Python 2.7]
+- Python 2.7
   - [Download](https://www.python.org/downloads/)
 
 ## Main source files
