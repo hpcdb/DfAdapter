@@ -4,8 +4,5 @@ DfAdapter is a light-weight tool that collects provenance of human interaction d
 
 # Contents
 
-
-# Run an example
-
-## Dependencies
-
+- [Data diagrams](diagrams)   
+- [Dataflow example in Spark](generic_dataflow)
