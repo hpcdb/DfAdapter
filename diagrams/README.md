@@ -5,7 +5,7 @@
 
 ### DfAdapter tables
 
-![DfAdapter Excerpt](https://raw.githubusercontent.com/hpcdb/DfAdapter/master/diagrams/excerpt.png =400x550)
+<img src="https://raw.githubusercontent.com/hpcdb/DfAdapter/master/diagrams/excerpt.png" alt="DfAdapter Excerpt" style="width:400px; height:550px" width="400" height="500"/>
 
 ### PROV-Df extended with Adaptation
 
