@@ -21,3 +21,5 @@ The objective of this diagram is to clarify how human adaptation occurs in a run
 5. The running workflow communicates with DfAdapter to send data related to the workflow execution state, extra data that are relevant to identify the execution state. Also, the workflow sends a  message to DfAdapter to notify that the dataset has been reloaded.
 6. DfAdapter stores human-adaptation data in the provenance database.
 7. DfAdapter sends a feedback message to the user to notify that the adaptation action has finished successfully.
+
+An example of implementation of this diagram is described along with the source code of a [generic workflow](generic_dataflow/README.md#functioning) implemented in Spark.
