@@ -38,6 +38,7 @@ $> bash DfAdapter.sh
 ## Functioning
 
 In this example, we implement the [Sequence Diagram](../README.md#sequence-diagram) as follows.
+
 First, in message `1`, the user calls DfAdapter using `DfAdapter.sh` script.
 
 DfAdapter and the running workflow in Spark uses Redis to store the adaptable dataset. That is, when DfAdapter adapts the adaptable dataset in Redis (message `2` in the diagram), the running workflow in Spark reloads the dataset with the new adjusted data (message `4` in the diagram).
