@@ -9,4 +9,4 @@ DfAdapter is a light-weight tool that collects provenance of human interaction d
 
 # Sequence Diagram
 
-![Sequence Diagram](https://raw.githubusercontent.com/hpcdb/DfAdapter/master/diagrams/seq-diagram.png")
+![Sequence Diagram](https://raw.githubusercontent.com/hpcdb/DfAdapter/master/diagrams/seq-diagram.png)

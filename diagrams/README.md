@@ -1,11 +1,11 @@
 # Data Diagrams
 
 ### Provenance Database Entity-relationship Diagram
-![Complete ER-Diagram](https://raw.githubusercontent.com/hpcdb/DfAdapter/master/diagrams/DfAnalyzer-DB-Schema-v3.png")
+![Complete ER-Diagram](https://raw.githubusercontent.com/hpcdb/DfAdapter/master/diagrams/DfAnalyzer-DB-Schema-v3.png)
 
 ### DfAdapter tables
 
-![DfAdapter Excerpt](https://raw.githubusercontent.com/hpcdb/DfAdapter/master/diagrams/excerpt.png)
+![DfAdapter Excerpt](https://raw.githubusercontent.com/hpcdb/DfAdapter/master/diagrams/excerpt.png =400x550)
 
 ### PROV-Df extended with Adaptation
 
