@@ -5,4 +5,8 @@ DfAdapter is a light-weight tool that collects provenance of human interaction d
 # Contents
 
 - [Data diagrams](diagrams)   
-- [Dataflow example in Spark](generic_dataflow)
+- [Adapting a Spark dataflow online](generic_dataflow)
+
+# Sequence Diagram
+
+![Sequence Diagram](https://raw.githubusercontent.com/hpcdb/DfAdapter/master/diagrams/seq-diagram.png")
