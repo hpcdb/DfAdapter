@@ -1,6 +1,6 @@
 # Data Diagrams
 
-### Provenance Database Entity-relationship Diagram
+### Provenance Database Relational Schema
 ![Complete ER-Diagram](https://raw.githubusercontent.com/hpcdb/DfAdapter/master/diagrams/DfAnalyzer-DB-Schema-v3.png)
 
 ### DfAdapter tables
