@@ -4,7 +4,7 @@ DfAdapter is a light-weight tool that register user steering data when users ada
 
 # Contents
 
-- [Data diagrams](diagrams)   
+- [Diagrams](diagrams)   
 - [Adapting a Spark dataflow online](generic_dataflow)
 - [Workflow steering queries](queries.md)
 
