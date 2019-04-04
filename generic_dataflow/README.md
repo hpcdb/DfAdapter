@@ -35,7 +35,7 @@ $> bash run-main-dataflow.sh
 $> bash DfAdapter.sh
 ```
 
-## How to use DfAdapter in this example
+## How DfAdapter is used in this example
 
 In this example, we implement this [Sequence Diagram](../diagrams/seq-diagram.pdf) as follows.
 
