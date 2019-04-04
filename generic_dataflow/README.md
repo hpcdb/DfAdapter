@@ -37,7 +37,7 @@ $> bash DfAdapter.sh
 
 ## How to use DfAdapter in this example
 
-In this example, we implement the [Sequence Diagram](../README.md#sequence-diagram) as follows.
+In this example, we implement this [Sequence Diagram](../diagrams/seq-diagram.pdf) as follows.
 
 First, in message `1`, the user calls DfAdapter using `DfAdapter.sh` script.
 
