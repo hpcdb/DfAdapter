@@ -2,7 +2,6 @@ import sys
 import os
 import json
 from time import gmtime, strftime
-from subprocess import call
 from subprocess import Popen, PIPE
 import pymonetdb
 
@@ -33,18 +32,22 @@ if __name__ == "__main__":
     user = sys.argv[1]
     dataset = sys.argv[2]
     parameters_json = sys.argv[3]
+    if len(sys.argv) > 3:
+        adapter_implementation_script = sys.argv[4]
+    else:
+        adapter_implementation_script = "src/adapters/redis_based_adapter.py"
 
     parameters_str = get_steered_parameters_str(parameters_json)
-    cmd = ["python","src/Dataset_2_Adapter.py",parameters_str]
+    cmd = ["python", adapter_implementation_script, parameters_str]
     process = Popen(cmd, stdout=PIPE)
-    (output, err) = process.communicate()
+    (adapted_parameters_json, err) = process.communicate()
 
     #print err
     exit_code = process.wait()
     if (exit_code == 0):
-        provenance = json.loads(output)
+        provenance = json.loads(adapted_parameters_json)
         provenance.update({"user":user, "dataset":dataset, "time_gmt":strftime("%Y-%m-%d %H:%M:%S", gmtime())})
-        with open('adaptations.jsonl', 'a+') as outfile:
+        with open('data/adaptations.jsonl', 'a+') as outfile:
             outfile.write(json.dumps(provenance)+"\n")
 
         cursor.execute('set schema "public"')

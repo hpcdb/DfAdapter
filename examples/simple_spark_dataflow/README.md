@@ -19,7 +19,7 @@
 
 #### DfAdapter
 
-- `DfAdapter.sh` predefines some parameters that can be tuned with new values. If you want to modify different parameters or with different values, you can edit the JSON in this file.
+- `DfAdapter-example.sh` predefines exemplary parameters that can be tuned with new values. If you want to modify different parameters or with different values, you can edit the JSON in this file.
 - `src/DfAdapter.py` calls the Dataset Adapter.
 - `src/Dataset_2_Adapter.py` contains application-specific code that runs the adaptation.
 

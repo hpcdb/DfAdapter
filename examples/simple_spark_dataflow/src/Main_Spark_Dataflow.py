@@ -2,7 +2,7 @@ from pyspark import SparkContext, SparkConf
 import time
 import sys
 import numpy as np
-from Dataset_2_Adapter import *
+from src.adapters.redis_based_adapter import *
 
 conf = SparkConf().setAppName("dataflow")
 sc = SparkContext(conf=conf)
@@ -31,7 +31,7 @@ error = 1.0e-1
 i = 0
 max_iterations = 100
 dataset_1 = sc.parallelize(X,8)
-ds2_adapter = DataSet_2_Adapter_Spark()
+ds2_adapter = Redis_DataSet_Adapter()
 ##################
 
 dataset_2 = dataset_1.map(lambda de: act1(de))

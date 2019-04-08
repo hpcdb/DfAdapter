@@ -5,7 +5,7 @@ import time
 import ast
 from time import gmtime, strftime
 
-class DataSet_2_Adapter_Spark(object):
+class Redis_DataSet_Adapter(object):
     def __init__(self):
         self.redis_client = redis.from_url('redis://localhost:6379')
 
@@ -18,15 +18,15 @@ class DataSet_2_Adapter_Spark(object):
         attr3 = float(self.redis_client.get("attr3"))
         return [attr1, attr2, attr3]
 
-    def update_values(self,dataset_2_lst,iteration):
+    def update_values(self,dataset_lst,iteration):
         new_values = self.get_new_values()
         self.redis_client.set("iteration", iteration)
-        self.redis_client.set("old_values", dataset_2_lst[0])
+        self.redis_client.set("old_values", dataset_lst[0])
         self.redis_client.set("adapted", "f")
         return [[new_values[0], new_values[1], new_values[2]]]
 
 
-class DataSet_2_Adapter_ProcCall(object):
+class DataSet_Adapter_ProcCall(object):
     def __init__(self):
         self.redis_client = redis.from_url('redis://localhost:6379')
 
@@ -59,5 +59,5 @@ class DataSet_2_Adapter_ProcCall(object):
 
 if __name__ == '__main__':
     dict_new_values = json.loads(sys.argv[1])
-    ds2Adpt = DataSet_2_Adapter_ProcCall()
+    ds2Adpt = DataSet_Adapter_ProcCall()
     ds2Adpt.adapt(dict_new_values)

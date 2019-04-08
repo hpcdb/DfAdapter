@@ -4,3 +4,4 @@ derby.log
 *.rdb
 metastore_db/
 src/*pyc
+dump.rdb
