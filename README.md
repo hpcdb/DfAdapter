@@ -4,15 +4,11 @@ DfAdapter is a light-weight tool that register user steering data when users ada
 
 # Contents
 
-- [Diagrams](diagrams)   
-- [Examples](examples)
+- [Data and Sequence Diagrams](diagrams)   
+- [Usage examples](examples)
   - [Simple workflow implemented with Spark](examples/simple_spark_dataflow)
   - [libMesh-sedimentation in C++](examples/libMesh-sedimentation)
 - [Workflow steering queries](queries.md)
-
-
-# DfAdapter utilization
-
 
 
 # Contacts
