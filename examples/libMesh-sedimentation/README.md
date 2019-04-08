@@ -1,7 +1,7 @@
 # libMesh-sedimentation Example
 
 DfAdapter was mainly used coupled with a sedimentation simulation solver used in the O&G industry, called [**libMesh-sedimentation**](https://github.com/hpcdb/workflow-sedimentation), implemented in C++.
-Please visit its own GitHub repository for more details and source code.
+Please visit its own GitHub repository for more details on how to run libMesh-sedimentation and its source code.
 
 ## Functioning of DfAdapter within libMesh-sedimentation
 
