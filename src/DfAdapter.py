@@ -21,8 +21,8 @@ def get_steered_parameters_str(parameters_json):
 
 if __name__ == "__main__":
 
-    if len(sys.argv) != 4:
-        print "Arguments: user dataset parameters_json"
+    if len(sys.argv) < 4:
+        print "Arguments: user dataset parameters_json [optional path to adapter script]"
         sys.exit(0)
 
     connection = pymonetdb.connect(username="monetdb", password="monetdb", hostname="localhost", database="dataflow_analyzer", autocommit=True)
@@ -32,7 +32,7 @@ if __name__ == "__main__":
     user = sys.argv[1]
     dataset = sys.argv[2]
     parameters_json = sys.argv[3]
-    if len(sys.argv) > 3:
+    if len(sys.argv) > 4:
         adapter_implementation_script = sys.argv[4]
     else:
         adapter_implementation_script = "src/adapters/redis_based_adapter.py"
