@@ -1,4 +1,4 @@
-# Data Diagrams
+# Diagrams
 
 ### Provenance Database Relational Schema
 ![Complete ER-Diagram](https://raw.githubusercontent.com/hpcdb/DfAdapter/master/diagrams/DfAnalyzer%26Adapter.png)
@@ -23,7 +23,7 @@ The sequence of steps that occur when a user steers using DfAdapter are as follo
 - `5`. Provenance Server registers the beginning of a steering intention.
 - `6`. DfAdapter client calls the adapter.
 - `7`. The adapter (see [implemented adapters](https://github.com/hpcdb/DfAdapter/tree/master/src/adapters)) effectuates the adaptation that can be perceived by the running workflow.
-- `8`. The running workflow perceives an adaptation (e.g., it verifies that a file -- see [libMesh-sedimentation example](examples/libMesh-sedimentation) -- or an in-memory data structure -- see [Spark example](examples/simple_spark_dataflow) -- has been modified).
+- `8`. The running workflow perceives an adaptation (e.g., it verifies that a file -- see [libMesh-sedimentation example](../examples/libMesh-sedimentation) -- or an in-memory data structure -- see [Spark example](../examples/simple_spark_dataflow) -- has been modified).
 - `9`. In the steering points specified by the user in the workflow code, the workflow generates steering action data and calls Provenance Server.
 - `10`. Provenance Server receives the callings and stores user steering data in the Provenance Database.
 - `11`. The user can run user steering action analysis. 
