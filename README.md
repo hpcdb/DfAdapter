@@ -1,6 +1,6 @@
 # DfAdapter
 
-DfAdapter is a light-weight tool that register user steering data when users adapt a dataflow online (while it is in execution), relates with other data of interest and makes the provenance database available for online analytical queries. 
+DfAdapter is a light-weight tool that tracks provenance of user steering actions when users adapt a dataflow online (while it is in execution), relates with data of interest and makes the provenance database available for online analytical queries. 
 
 # Contents
 
